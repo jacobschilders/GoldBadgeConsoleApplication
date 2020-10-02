@@ -12,16 +12,19 @@ namespace GoldBadgeConsoleApp
     
     public class MenuItem
     { //properties
-        public string[] Ingrediants = { "tomato", "onion", "cheese", "bacon", "lettuce", "pickles", "mustard", "ketchup" };
+
+
+        public List<string> Ingrediants { get; set; } = new List<string>();
+       //change to empty list
         public string ItemName { get; set; }
         public int ItemNumber { get; set; }
         public string Description { get; set; }
         
     //constructors
     public MenuItem() { }
-    public MenuItem(string[] ingrediants, string itemName, int itemNumber, string description)
+    public MenuItem(List<string> ingrediants, string itemName, int itemNumber, string description)
     {
-        Ingrediants = ingrediants;
+        List<string> Ingrediants = ingrediants;
         ItemName = itemName;
         ItemNumber = itemNumber;
         Description = description;
