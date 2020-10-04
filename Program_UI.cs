@@ -58,25 +58,9 @@ namespace GoldBadgeConsoleApp
         {
             MenuItem item = new MenuItem();
 
-            //Ingrediants List<string>
+            
 
-            bool continueAdding = true;
-            List<string> Ingredients = new List<string>();
-            while (continueAdding)
-            {
-                string answer = Console.ReadLine();
-                if (answer == "yes")
-                {
-                    Console.WriteLine("Please enter an ingrediant for the new item");
-                    string ingredientanswer = Console.ReadLine();
-                    item.Ingredients.Add(ingredientanswer);
-
-                }
-                else
-                {
-                    continueAdding = false;
-                }
-            }
+            
             //add a loop to keep choosing options
             //Item Name string
             Console.WriteLine("Please enter the name of the new item");
@@ -87,6 +71,26 @@ namespace GoldBadgeConsoleApp
             //Description string
             Console.WriteLine("Please enter the description of your new item");
             item.Description = Console.ReadLine();
+            Console.WriteLine("Please enter an ingredient for your item.");
+            bool continueAdding = true;
+            List<string> Ingredients = new List<string>();
+            while (continueAdding)
+            {
+                string answer = Console.ReadLine();
+                if (answer == "yes")
+                {
+                    Console.WriteLine("Please enter another ingrediant for the new item");
+                    string ingredientanswer = Console.ReadLine();
+                    item.Ingredients.Add(ingredientanswer);
+
+                }
+                else
+                {
+                    continueAdding = false;
+                }
+            }
+
+            _menuRepo.AddNewMenuItem(item);
         }
         private void DeleteMenuItem()
         {
