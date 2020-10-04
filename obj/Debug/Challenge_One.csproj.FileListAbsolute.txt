@@ -1,0 +1,7 @@
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\GoldBadgeConsoleApp\obj\Debug\Challenge_One.csprojAssemblyReference.cache
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\GoldBadgeConsoleApp\obj\Debug\Challenge_One.csproj.CoreCompileInputs.cache
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\GoldBadgeConsoleApp\bin\Debug\GoldBadgeConsoleApp.exe.config
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\GoldBadgeConsoleApp\bin\Debug\GoldBadgeConsoleApp.exe
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\GoldBadgeConsoleApp\bin\Debug\GoldBadgeConsoleApp.pdb
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\GoldBadgeConsoleApp\obj\Debug\GoldBadgeConsoleApp.exe
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\GoldBadgeConsoleApp\obj\Debug\GoldBadgeConsoleApp.pdb

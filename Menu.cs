@@ -14,7 +14,7 @@ namespace GoldBadgeConsoleApp
     { //properties
 
 
-        public List<string> Ingrediants { get; set; } = new List<string>();
+        public List<string> Ingredients { get; set; } = new List<string>();
        //change to empty list
         public string ItemName { get; set; }
         public int ItemNumber { get; set; }
@@ -22,9 +22,9 @@ namespace GoldBadgeConsoleApp
         
     //constructors
     public MenuItem() { }
-    public MenuItem(List<string> ingrediants, string itemName, int itemNumber, string description)
+    public MenuItem(List<string> ingredients, string itemName, int itemNumber, string description)
     {
-        List<string> Ingrediants = ingrediants;
+        List<string> Ingredients = ingredients;
         ItemName = itemName;
         ItemNumber = itemNumber;
         Description = description;
