@@ -64,7 +64,7 @@ namespace Challenge_Two
             List<Claim> listOfClaims = claim_Repository.ShowAllClaims();
             foreach(Claim claim in listOfClaims)
             {
-                Console.WriteLine("{0}",claim.ClaimID, claim.ClaimType, claim.Description, claim.ClaimAmount, claim.DateOfIncident, claim.DateOfClaim, claim.IsValid);
+                Console.WriteLine(claim.ClaimID, claim.ClaimType, claim.Description, claim.ClaimAmount, claim.DateOfIncident, claim.DateOfClaim, claim.IsValid);
             }
             PrintLine();
             Console.WriteLine("Press any key to continue...");
