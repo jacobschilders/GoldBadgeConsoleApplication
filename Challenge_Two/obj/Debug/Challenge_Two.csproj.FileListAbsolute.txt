@@ -1,0 +1,7 @@
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two\obj\Debug\Challenge_Two.csprojAssemblyReference.cache
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two\obj\Debug\Challenge_Two.csproj.CoreCompileInputs.cache
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two\bin\Debug\Challenge_Two.exe.config
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two\bin\Debug\Challenge_Two.exe
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two\bin\Debug\Challenge_Two.pdb
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two\obj\Debug\Challenge_Two.exe
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two\obj\Debug\Challenge_Two.pdb
