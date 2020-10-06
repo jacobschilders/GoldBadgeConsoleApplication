@@ -61,10 +61,10 @@ namespace Challenge_Two
             PrintLine();
             
 
-            List<Claim> listOfClaims = claim_Repository.ShowAllClaims();
+            Queue<Claim> listOfClaims = claim_Repository.ShowAllClaims();
             foreach(Claim claim in listOfClaims)
             {
-                Console.WriteLine(claim.ClaimID, claim.ClaimType, claim.Description, claim.ClaimAmount, claim.DateOfIncident, claim.DateOfClaim, claim.IsValid);
+                Console.WriteLine($"{claim.ClaimID} | {claim.ClaimType} | {claim.Description} | {claim.ClaimAmount} | {claim.DateOfIncident} | {claim.DateOfClaim} | {claim.IsValid}");
             }
             PrintLine();
             Console.WriteLine("Press any key to continue...");
@@ -105,22 +105,16 @@ namespace Challenge_Two
 
         private void QueueNextClaim()
         {
-            Queue<Claim> nextClaim = new Queue<Claim>();
-            foreach(Object obj in nextClaim)
-            {
-                Console.WriteLine("Claim ID:", nextClaim.Peek());
-                Console.WriteLine("Claim Type:", nextClaim.Peek());
-                Console.WriteLine("Description:", nextClaim.Peek());
-                Console.WriteLine("Amount:", nextClaim.Peek());
-                Console.WriteLine("DateOfAccident:", nextClaim.Peek());
-                Console.WriteLine("DateOfClaim:", nextClaim.Peek());
-                Console.WriteLine("Is Valid:", nextClaim.Peek());
-            }
+            Console.WriteLine("Here are the details for the next claim to be handled:");
+            Claim claim = claim_Repository.ShowNextQueue();
+            Console.WriteLine($"ID:{claim.ClaimID} | Type:{claim.ClaimType} | Description:{claim.Description} | Claim Amount:{claim.ClaimAmount} | Date Of Incident:{claim.DateOfIncident} | Date Of Claim:{claim.DateOfClaim} | Is Valid:{claim.IsValid}" );
+            
             Console.WriteLine("Do you want to deal with this claim now(y/n)?");
+            
             char response = char.Parse(Console.ReadLine());
             if(response != 'n' && response == 'y')
             {
-                nextClaim.Dequeue();
+                claim_Repository.DequeueClaim();
             }
             else
             {
@@ -128,6 +122,13 @@ namespace Challenge_Two
                 RunMenu();
             }
         }
+            
+            
+
+
+            
+            
+               
 
            
            

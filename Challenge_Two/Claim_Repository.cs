@@ -8,9 +8,9 @@ namespace Challenge_Two
 {
     public class Claim_Repository
     {
-        protected readonly List<Claim> _claimRepo = new List<Claim>();
+        protected readonly Queue<Claim> _claimRepo = new Queue<Claim>();
 
-        public List<Claim> ShowAllClaims()
+        public Queue<Claim> ShowAllClaims()
         {
             return _claimRepo;
         }
@@ -18,19 +18,28 @@ namespace Challenge_Two
         public bool EnterNewClaim(Claim newClaim)
         {
             int startingCount = _claimRepo.Count;
-            _claimRepo.Add(newClaim);
+            _claimRepo.Enqueue(newClaim);
             bool wasAdded = (_claimRepo.Count > startingCount) ? true : false;
             return wasAdded;
         }
 
         //take care of next claim (queue / dequeue)
 
-        public Queue<Claim> QueueNextClaim()
+        public Claim ShowNextQueue()
         {
-            Queue<Claim> nextClaim = new Queue<Claim>(_claimRepo);
-            nextClaim.Dequeue();
-            return nextClaim;
+            _claimRepo.Peek();
+            Claim oneClaim = _claimRepo.Peek();
+            return oneClaim;
         }
+
+        public void DequeueClaim()
+        {
+            _claimRepo.Dequeue();
+        }
+            
+
+
+
 
     }
 }
