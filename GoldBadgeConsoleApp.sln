@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge_Three", "Challenge_Three\Challenge_Three.csproj", "{5419A75F-651D-444F-994E-2AD907830811}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Challenge1", "Challenge1", "{5E673E90-5970-41A9-A00D-6E81D4A8F974}"
+	ProjectSection(SolutionItems) = preProject
+		Challenge_Two\ProgramUI.cs = Challenge_Two\ProgramUI.cs
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge1", "Challenge1\Challenge1.csproj", "{CACE28BB-8FF1-4B9C-BA4A-20CBB92895B7}"
 EndProject
