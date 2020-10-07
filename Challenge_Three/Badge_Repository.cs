@@ -13,7 +13,7 @@ namespace Challenge_Three
         protected readonly Badge _badgeRepo = new Badge();
         Dictionary<int, List<string>> BadgeDictionary = new Dictionary<int, List<string>>();
 
-        public Dictionary<int, List<string>> AddToDictionary()
+        public Dictionary<int, List<string>> AddToDictionary(Badge badge)
         {
            BadgeDictionary.Add(_badgeRepo.BadgeID, _badgeRepo.DoorName);
 
