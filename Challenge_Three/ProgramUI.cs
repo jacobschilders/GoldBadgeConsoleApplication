@@ -4,12 +4,14 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Challenge_Three
 {
     class ProgramUI
     {
-        private readonly Badge_Repository _badgeRepo = new Badge_Repository();
+        protected readonly Badge_Repository _badgeRepo = new Badge_Repository();
+        protected readonly Dictionary<int, List<string>> BadgeDictionary = new Dictionary<int, List<string>>();
         public void Run()
         {
 
@@ -90,12 +92,47 @@ namespace Challenge_Three
 
         private void EditBadge()
         {
+            Badge badge = new Badge();
             Console.Clear();
             Console.WriteLine("What is the badge number you would like to update?:");
             int answer = int.Parse(Console.ReadLine());
-            if (BadgeDirectory.ContainsKey(answer))
+            if (BadgeDictionary.ContainsKey(answer))
             {
+                Console.WriteLine($"{BadgeDictionary[answer]} has access to doors {BadgeDictionary.Values}." );
+                Console.WriteLine("What would you like to do? \n" +
+                    "1. Remove a door \n"+
+                    "2. Add a door");
+                int input = int.Parse(Console.ReadLine());
+                List<string> DoorName = new List<string>();
+                if(input == 1)
+                {
+                    Console.WriteLine("Which door would you like to remove?");
+                    string door = Console.ReadLine();
+                    badge.DoorName.Contains(door);
 
+                    if (BadgeDictionary.ContainsKey(input) && badge.DoorName.Contains(door))
+                    {
+                        badge.DoorName.Remove(door); 
+                        Console.WriteLine("Door Removed");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No access found");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Enter the door you would like access to:");
+                    string newDoor = Console.ReadLine();
+                    badge.DoorName.Add(newDoor);
+                }
+               
+            }
+            else
+            {
+                Console.WriteLine("Badge ID is not valid");
+                Console.ReadKey();
+                RunMenu();
             }
 
 
@@ -104,6 +141,15 @@ namespace Challenge_Three
         private void ListAllBadges()
         {
             Console.Clear();
+            Badge badge = _badgeRepo.ShowAllBadges();
+            foreach (Badge item in _badgeRepo)
+            {
+                Console.WriteLine($"Badge #      DoorAccess \n" +
+                    $"{item.BadgeID}      {item.DoorName}");
+
+            }
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
 
         }
 
