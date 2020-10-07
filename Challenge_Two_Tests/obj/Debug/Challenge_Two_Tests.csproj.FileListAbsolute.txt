@@ -1,0 +1,17 @@
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\bin\Debug\Challenge_Two_Tests.dll
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\bin\Debug\Challenge_Two_Tests.pdb
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\bin\Debug\Challenge_Two.exe
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\bin\Debug\Challenge_Two.pdb
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\bin\Debug\Challenge_Two.exe.config
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\obj\Debug\Challenge_Two_Tests.csprojAssemblyReference.cache
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\obj\Debug\Challenge_Two_Tests.csproj.CoreCompileInputs.cache
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\obj\Debug\Challenge_Two_Tests.csproj.CopyComplete
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\obj\Debug\Challenge_Two_Tests.dll
+C:\Users\jakec\source\repos\GoldBadgeConsoleApp\Challenge_Two_Tests\obj\Debug\Challenge_Two_Tests.pdb

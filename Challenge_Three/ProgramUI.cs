@@ -58,7 +58,8 @@ namespace Challenge_Three
             
             
             Console.WriteLine("What is the number on the badge:");
-            badge.BadgeID = int.Parse(Console.ReadLine());
+            badge.BadgeID input = int.Parse(Console.ReadLine());
+            
            
 
             Console.WriteLine("List a door it needs access to:");
