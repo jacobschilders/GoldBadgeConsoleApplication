@@ -138,12 +138,11 @@ namespace Challenge_Three
 
         }
 
-        private void ListAllBadges()
+        private void ListAllBadges() //????
         {
             Console.Clear();
-            Badge badge = _badgeRepo.ShowAllBadges();
-            foreach (Badge item in _badgeRepo)
-            {
+            foreach (Badge item in BadgeDictionary)
+            { 
                 Console.WriteLine($"Badge #      DoorAccess \n" +
                     $"{item.BadgeID}      {item.DoorName}");
 

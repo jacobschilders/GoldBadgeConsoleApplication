@@ -20,3 +20,5 @@ namespace Challenge_Three_Tests
         }
     }
 }
+            // I realy struggled with the concept of the dictionary and how to implement it into my code.
+            //I would like to work on making Challenge 3 correct after I learn more about dictionaries.
